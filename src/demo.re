@@ -5,7 +5,7 @@ type exp =
   | Multi(exp, exp)
   | Lambda(string, exp)
   | Application(exp, exp)
-  
+
 and env = 
 	| EmptyEnv
   | Env(string, ret, env)
@@ -58,7 +58,7 @@ and applyClosure = (v1, v2) =>{
 };
 
 
-/* 4*3 = 12 */
+/* (3+1)*3 = 12 */
 interp(Multi(Plus(Number(1), Number(3)), Number(3)), EmptyEnv) |> Js.log;
 
 /* x = 4 */
