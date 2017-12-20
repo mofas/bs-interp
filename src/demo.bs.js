@@ -77,7 +77,7 @@ function applyEnv(y, _env) {
     var env = _env;
     if (env) {
       if (env[0] === y) {
-        return /* Int */Block.__(0, [env[1]]);
+        return env[1];
       } else {
         _env = env[2];
         continue ;
@@ -95,19 +95,11 @@ function applyClosure(v1, v2) {
     case 1 : 
         return /* Error */Block.__(1, ["type Mismatch in Application"]);
     case 2 : 
-        switch (v2.tag | 0) {
-          case 0 : 
-              return interp(v1[1], /* Env */[
-                          v1[0],
-                          v2[0],
-                          v1[2]
-                        ]);
-          case 1 : 
-          case 2 : 
-              return /* Error */Block.__(1, ["type Mismatch in Application"]);
-          
-        }
-        break;
+        return interp(v1[1], /* Env */[
+                    v1[0],
+                    v2,
+                    v1[2]
+                  ]);
     
   }
 }
@@ -122,7 +114,7 @@ console.log(interp(/* Multi */Block.__(3, [
 
 console.log(interp(/* Symbol */Block.__(0, ["x"]), /* Env */[
           "x",
-          4,
+          /* Int */Block.__(0, [4]),
           /* EmptyEnv */0
         ]));
 
@@ -135,6 +127,23 @@ console.log(interp(/* Application */Block.__(5, [
                   ])
               ]),
             /* Number */Block.__(1, [5])
+          ]), /* EmptyEnv */0));
+
+console.log(interp(/* Application */Block.__(5, [
+            /* Lambda */Block.__(4, [
+                "x",
+                /* Application */Block.__(5, [
+                    /* Symbol */Block.__(0, ["x"]),
+                    /* Number */Block.__(1, [2])
+                  ])
+              ]),
+            /* Lambda */Block.__(4, [
+                "n",
+                /* Multi */Block.__(3, [
+                    /* Symbol */Block.__(0, ["n"]),
+                    /* Number */Block.__(1, [3])
+                  ])
+              ])
           ]), /* EmptyEnv */0));
 
 exports.extendEnv    = extendEnv;
