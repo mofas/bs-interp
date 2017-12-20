@@ -1,6 +1,7 @@
-# Basic Reason Template
+# A mini interpreter
 
-Hello! This project allows you to quickly get started with Reason and BuckleScript. If you wanted a more sophisticated version, try the `react` template (`bsb -theme react -init .`).
+This is practice project that I try to write a simple interpreter in Reason.
+You can find the source code at `src/demo.re`;
 
 # Build
 ```
@@ -13,6 +14,6 @@ npm run build
 npm run watch
 ```
 
+# Demo Link
 
-# Editor
-If you use `vscode`, Press `Windows + Shift + B` it will build automatically
+https://reasonml.github.io/try/?reason=C4TwDgpgBBAeZQLxRQKBQHygZRAWwCMB7AGwAoBnYAJwEsA7AcwEp0osA5AV0ImrIbBmaTFAAKJLhTJwwAGhjxWogLJcSwWjPgLZy9lAAyAQ0IATY5RoNGupWywBBMGBK0Axsc1F62+YrBmAG5UVFBIGHoANyRUAEgsAFE8MFBE6Pik6Ks6JgVBXWjg0PDoaghgWISoAEl6YAF6-STqaiJ+KlyWTKgAYRIiCi5ynJs7fwgikNQSCsVgSbN0mOQyWAUo40kIQqjhRAA+KGW1ja2uHci96dnKgAtjejNZtQ1aJCgyKIBGDYAmfZHADebAoAHdaMB3HdPj9-sIQaIyHUGoJvswFCjGsAAYDavVsd8oAAqKCCAEOKAAfSQR0SrXaZAARKUoCpaBQ8F5oWT6Gz1JomcI2ABfVAim5zB5PWYSKQfL6-KBRAG0qCIqDgyE8xXw9WU5EEtEY-Go+q4tVYtFQADUvJxzWpavpbX4LPA0HZnO5MIY4kkFCFUFF4umMzm5Xc9r4CFWsl2eI1KC1UJhsn1KEzBlwhFIZBAeOMLhIIBOIATbCznB4BD4ZHoPDxWIbeH0Vf9UhkSogqsOUGlzwgcukghjXYT+XqY57Cbbmawr0045gvaOA5eAq0o+oYGXkz2k4WO5kf1nlfnRlMBAspxgeP6g2GEFvl33c9EzlcHi8tB8ZGoXjtAoAFPIWxYgA+QwjNuu4AcAQFXCaMH-o8ZhnlmYpiqhUBFq4pbRAq5aIWqIJxCmPL7vqcTVMkqT4SsdIMm6vSPPQRCVAAZgwZjKsYdDGAQsxCvENHZOsvHbLsq5khxnxQLASDICAUAIqaXznBAwgijAJAUNAQI4eBZZSVpIZYU8hl4ZBT4KnCyqrhq5Ewrq9kIga1kjOJBATmpxjMHiyHefMiwnOJxjoQYNJ9i6jLuhEXpcqmvJQJ+bieN49BBmZYYAPSkgALMSADMHzfH8JI5agyGLlow5kNwvD8OiCgNbW-BFf5LU1nWHUmrRaRFOwRwAFIUAAdAMjDTHl8kfPlFVVVOx45sQ5BMrAQoKCc61Mgo+VbSkA17MIGAjeNk3TaSaxqgpdodWQACswjEpVyGpd+GVkCY5iWDtCh1SteY7SarU9f5IPdfwT19Yd9EnWdE1EFNoRAA
